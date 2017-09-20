@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<target name="createDir">
+<project default ="createDir" name = "Zone Academy ANT Project">
+<target name="createDir" depends ="run">
         <mkdir dir="/test/lib"/>
         <echo message="Create directory in test instance" /> 
  </target>
-<project default ="run" name = "Zone Academy ANT Project">
 <target name ="run" depends ="compile">
 <java classname = "newExample.HelloWorld">
 <classpath path = "staging"/>
